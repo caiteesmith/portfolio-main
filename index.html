@@ -1,4 +1,11 @@
-<?php include "php/form.php"; ?>
+<?php include "form.php"; ?>
+<!--
+<?php
+if($_POST["message"]) {
+    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+-->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -34,6 +41,7 @@
 	
 <body class="parallax">
 <div class="background">
+	
 <!-- NAV START -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -421,13 +429,13 @@
     <h1>Contact Me_</h1>
     <div class="row">
         <div class="text-center col-12">
-            <form method="post" id="form" name="form" action="php/form.php" onSubmit="return validate();" class="text-left">
+            <form method="post" id="form" name="form" action="form.php" class="text-left">
               <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Name" class="form-control" aria-describedby="nameHelp" aria-required="true" tabindex="1" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp" aria-required="true" tabindex="1" required>
                 <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
               </div>
               <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="Email Address" class="form-control" aria-describedby="emailHelp" aria-required="true" tabindex="2" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp" aria-required="true" tabindex="2" required>
                 <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
               </div>
               <div class="form-group">
