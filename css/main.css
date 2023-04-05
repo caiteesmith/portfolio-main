@@ -217,6 +217,14 @@ font-family: 'Syne', sans-serif;
 	transition: all 0.25s ease-in-out;
 }
 
+.project {
+	transition: all 0.15s ease-in-out;
+}
+
+.project:hover {
+	opacity: 0.95;
+}
+
 .languages {
 	letter-spacing: 0.1em;
 }
