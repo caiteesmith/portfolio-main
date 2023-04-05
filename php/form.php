@@ -21,11 +21,11 @@ if(
 
     //Checking if mail sent successfully
     if ($result) {
-		echo '<script type="text/javascript">alert("Your Message was sent Successfully!");</script>';
+		echo '<script type="text/javascript">alert("Your message was sent successfully!");</script>';
 		echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 
 	} else {
-		echo '<script type="text/javascript">alert("Sorry! Message was not sent, Try again Later.");</script>';
+		echo '<script type="text/javascript">alert("Your message was not sent. Please try again Later.");</script>';
 		echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 	}
   }
