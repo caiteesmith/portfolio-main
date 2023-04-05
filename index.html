@@ -470,6 +470,27 @@ if($_POST["message"]) {
 <script src="js/bootstrap-4.4.1.js"></script>
 <script src="js/console.js"></script>
 	
+<script>
+	const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => alert("Thank you for your submission"))
+    .catch((error) => alert(error));
+};
+
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+</script>
+	
 </div>
 </body>
 </html>
