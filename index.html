@@ -421,21 +421,21 @@
     <h1>Contact Me_</h1>
     <div class="row">
         <div class="text-center col-12">
-            <form id="feedbackForm" class="text-left" name="validateform" action="" method="post">
+            <form method="post" id="form" name="form" action="php/form.php" onSubmit="return validate();" class="text-left">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp" aria-required="true" tabindex="1" required>
+                <input type="text" id="name" name="name" placeholder="Name" class="form-control" aria-describedby="nameHelp" aria-required="true" tabindex="1" required>
                 <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp" aria-required="true" tabindex="2" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" class="form-control" aria-describedby="emailHelp" aria-required="true" tabindex="2" required>
                 <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
               </div>
               <div class="form-group">
-                <textarea rows="6" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp" aria-required="true" tabindex="4" required></textarea>
+                <textarea rows="6" cols="100" id="message" name="message" placeholder="Message" class="form-control" aria-describedby="messageHelp" aria-required="true" tabindex="3" required></textarea>
                 <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
               </div>
 				
-              <button type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" data-submit="...Sending" tabindex="5">Send</button>
+              <button type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" data-submit="...Sending" tabindex="4">Send</button>
             </form>
         </div>
     </div>
