@@ -3,13 +3,13 @@
 $message = ""; 
 if(isset($_POST['submit'])) {
       $mailto = "caiteecodes@gmail.com";
-
-      //getting customer data
       $name = $_POST['name']; //getting customer name
       $email = $_POST['email']; //getting customer email
+	  $message = $_POST['message'];
       $subject = "Contact Form Details";
 
       //Email body I will receive
+      $subject = "Contact Form Details";
       $message = "<!DOCTYPE html>
       <html>
       <head></head>
@@ -31,8 +31,6 @@ if(isset($_POST['submit'])) {
       </table>
       </body>
       </html>";
-
-      $subject = "Contact Form Details";
 
       // Set content-type header for sending HTML email 
       $headers = "MIME-Version: 1.0" . "\r\n"; 
