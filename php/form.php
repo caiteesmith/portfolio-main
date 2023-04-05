@@ -36,17 +36,15 @@ if(isset($_POST['submit'])) {
       $headers = "MIME-Version: 1.0" . "\r\n"; 
       $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-      $headers .= "From:" . $email . "\r\n";
+      $headers .= "From:" . $name . " | " . $email . "\r\n";
 
-      $result = mail($to,$subject,$message,$headers);
+      $result = mail($mailto,$subject,$message,$headers);
 
       if ($result) {
-          // $message = "Your Message was sent Successfully!";
           echo '<script type="text/javascript">alert("Your message was sent successfully!");</script>';
           echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 
-      } else{
-          // $message = "Sorry! Message was not sent, Try again Later.";
+      } else {
           echo '<script type="text/javascript">alert("Your message was not sent. Try again Later.");</script>';
           echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 	}
