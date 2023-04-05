@@ -271,6 +271,12 @@ a:hover {
 		width: 100%;
 		height: 250px;
 	}
+	
+	.row .col-3 {
+  		-ms-flex: 0 0 45%;
+		flex: 0 0 45%;
+		max-width: 45%;
+	}
 }
 
 @media (max-width: 767.98px) {
@@ -292,6 +298,12 @@ a:hover {
 	.section-title {
 		font-size: 8vw;
 	}
+	
+	.row .col-3 {
+  		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 }
 
 
@@ -310,6 +322,21 @@ h5 {
 
 h6 {
 	font-size: 1.2em;
+}
+
+#about ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#about .bg {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.bi-stars, .bi-flower3, .bi-flower1, .bi-star-fill {
+	color: #ff85a7;
 }
 
 /* ANIMATION */
