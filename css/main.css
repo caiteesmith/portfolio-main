@@ -253,8 +253,8 @@ a {
 
 a:hover {
 	color: #353C42;
-/*	cursor: pointer;*/
-	cursor: url("../images/icons/cursor.png"), auto;
+	cursor: pointer;
+/*	cursor: url("../images/icons/cursor.png"), auto;*/
 	text-decoration: none;
 	transition: all 0.35s ease-in-out;
 }
