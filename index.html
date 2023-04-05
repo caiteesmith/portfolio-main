@@ -414,32 +414,35 @@
 </section>
 	
 <!-- CONTACT SECTION START -->
-<!--
 <section>
   <div class="container mt-2" id="contact">
     <h1>Contact Me_</h1>
     <div class="row">
         <div class="text-center col-12">
-            <form id="feedbackForm" class="text-left" name="validateform" onsubmit="return validateform()" method="post">
+            <form id="feedbackForm" class="text-left" name="validateform" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp" aria-required="true" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp" aria-required="true" tabindex="1" required>
                 <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp" aria-required="true" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp" aria-required="true" tabindex="2" required>
                 <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
               </div>
+			  <div class="form-group">
+                <input type="subject" class="form-control" id="subject" name="subject" placeholder="Subject" aria-describedby="subjectHelp" aria-required="true" tabindex="3" required>
+                <span id="subjectHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
               <div class="form-group">
-                <textarea rows="6" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp" aria-required="true" required></textarea>
+                <textarea rows="6" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp" aria-required="true" tabindex="4" required></textarea>
                 <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
               </div>
-              <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg">Send</button>
+				
+              <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-submit="...Sending">Send</button>
             </form>
         </div>
     </div>
   </div>
 </section>
--->
 <!-- CONTACT SECTION END -->
 
 <!-- FOOTER START -->
