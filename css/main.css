@@ -259,6 +259,10 @@ a {
 	transition: all 0.35s ease-in-out;
 }
 
+.medium {
+	text-decoration: underline;
+}
+
 a:hover {
 	color: #353C42;
 	cursor: pointer;
