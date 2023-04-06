@@ -1,4 +1,4 @@
-# My Front-End Developer Portfolio
+# Front-End Developer Portfolio
 
 Built with HTML5, Bootstrap, and CSS. Hosted on Netlify.
 caiteesmith.com
