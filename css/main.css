@@ -137,8 +137,8 @@ font-family: 'Syne', sans-serif;
 	margin-bottom: 2em;
 	background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
-    backdrop-filter: blur( 6px );
-    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.1 );
 	transition: all 0.25s ease-in-out;
@@ -147,7 +147,7 @@ font-family: 'Syne', sans-serif;
 #expertise:hover, #experience:hover, #work:hover, #interests:hover, #about:hover, #contact:hover {
 	background: rgba(255, 255, 255, 0.3);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-    backdrop-filter: blur( 8px );
+    backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur(8px);
 	transition: all 0.25s ease-in-out;
 }
@@ -217,6 +217,10 @@ h6 {
 /* EXPERTISE SECTION END */
 
 /* ABOUT SECTION START */
+#about {
+	padding-bottom: 2em;
+}
+
 #about ul {
 	list-style: none;
 	padding: 0;
