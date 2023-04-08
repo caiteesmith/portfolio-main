@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
 	<meta name="description" content="Caitee Smith's Front End Web Development Portfolio">
-	<meta name="keywords" content="HTML, CSS, JavaScript, portfolio, web development, New Jersey, New York, freelance, design">
+	<meta name="keywords" content="HTML, CSS, JavaScript, portfolio, web development, New Jersey, New York, freelance, design, landing pages">
 	<meta name="author" content="Caitlyn 'Caitee' Smith">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="hsla(28,100%,74%,1)">
 	  
-    <title>Caitee Smith: Portfolio</title>
+    <title>Caitee Smith | Portfolio</title>
 	  
     <!-- CSS -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
@@ -30,30 +30,50 @@
 	<link rel="manifest" href="images/favicons/site.webmanifest">
   </head>
 	
-<body>
+<body class="parallax">
 <div class="background">
+	
 <!-- NAV START -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- LOGO -->
+  <ul class="logo-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><img src="images/logos/logo-anim.svg" class="logo" alt="Caitee Smith logo"></a>
+    </li>
+  </ul>
+	
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  
   <span class="navbar-toggler-icon"></span>
   </button>
+	
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img src="images/logos/logo-anim.svg" class="logo" alt="Caitee Smith logo"></a>
-      </li>
+	
+	  
+	
+	  <!-- MAIN NAV START -->
       <li class="nav-item">
         <a class="nav-link" href="#expertise">Expertise</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="docs/Resume-Caitlyn-Smith.pdf" target="_blank">Resumé</a>
+        <a class="nav-link" href="#projects">Work</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="mailto:caiteecodes@gmail.com">Contact</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="docs/Resume-Caitlyn-Smith-nocontact.pdf" target="_blank">Resumé</a>
+      </li>
+	  <!-- MAIN NAV END -->
+		
+	  <!-- SOCIALS START -->
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/caiteesmith" name="GitHub">
             <i class="bi bi-github"></i></a>
@@ -61,17 +81,20 @@
       <li class="nav-item">
         <a class="nav-link" href="https://www.linkedin.com/in/caiteesmith" name="LinkedIn">
             <i class="bi bi-linkedin"></i></a>
+      </li>      <li class="nav-item">
+        <a class="nav-link" href="https://medium.com/@caiteecodes" name="Medium">
+            <i class="bi bi-medium"></i></a>
       </li>
-<!--
       <li class="nav-item">
         <a class="nav-link" href="https://www.behance.net/caiteesmith" name="Behance">
             <i class="bi bi-behance"></i></a>
       </li>
--->
+
       <li class="nav-item">
         <a class="nav-link" href="https://instagram.com/caiteecodes" name="Instagram">
             <i class="bi bi-instagram"></i></a>
       </li>
+	  <!-- SOCIALS END -->
 
       <!--<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,8 +125,8 @@
             <a href="#expertise" title="Links to expertise section">
             <img src="images/icons/arrow-down.svg" class="arrow-down" alt="page down"></a>
         </div>
-        <div class="col-6" id="header_right">
-          <img src="images/profiles/profile-3.webp" alt="About Caitee" id="profile_img">
+        <div class="col-6 project" id="header_right">
+          <img src="images/profiles/profile-4.webp" alt="About Caitee" id="profile_img">
         </div>
       </div>
     </div>
@@ -147,7 +170,7 @@
             <img class="mr-3 exp-icon" src="images/expertise_icons/dev.webp" alt="Development icon">
             <div class="media-body">
               <h4 class="mt-0 mb-1">Development</h4>
-              <p>Adobe Dreamweaver, Email Development, FTP, GitHub, Google Lighthouse, Gutenburg, IntelliJ IDEA, Netlify, Visual Studio + Code, Webflow, WordPress</p>
+              <p>Adobe Dreamweaver, Email Development, GitHub, Google Lighthouse, IntelliJ IDEA, Netlify, Visual Studio, VS Code, Webflow, WordPress/Gutenburg</p>
             </div>
           </li>
         </ul>
@@ -169,7 +192,7 @@
             <img class="mr-3 exp-icon" src="images/expertise_icons/pm.webp" alt="Project management icon">
             <div class="media-body">
               <h4 class="mt-0 mb-1">Project Management</h4>
-              <p>Asana, Axosoft, Kanban, Microsoft Office, Microsoft Teams, Slack</p>
+              <p>Asana, Axosoft, Microsoft Office, Microsoft Teams, Slack</p>
             </div>
           </li>
         </ul>
@@ -191,7 +214,7 @@
             <img class="mr-3 exp-icon" src="images/expertise_icons/marketing.webp" alt="Marketing icon">
             <div class="media-body">
               <h4 class="mt-0 mb-1">Marketing</h4>
-              <p>B2B, Content, Copywriting, Email, Integrate Platform, Litmus, Social Media, SEO, WordPress, Yoast</p>
+              <p>B2B, Content Creation, Copywriting, Email, Integrate Platform, Litmus, Medium, Social Media, SEO (Onsite and Offsite), Yoast</p>
             </div>
           </li>
         </ul>
@@ -216,15 +239,15 @@
 <section>
   <div class="container mt-2" id="experience">
     <h1 class="section-title">Experience_</h1>
-    <div class="row">
+	<div class="row">
       <div class="col-md-4 col-12">
         <ul class="list-unstyled">
           <li class="media">
-            <img class="mr-3 exp-icon" src="images/company_icons/hipb2b.webp" alt="HIPB2B">
+            <img class="mr-3 exp-icon co-icon" src="images/company_icons/hipb2b.webp" alt="HIPB2B">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">2013 - <em>now</em></h5>
-              <h4>Front-End Web Developer + Content Manager</h4>
-              <a href="https://hipb2b.com">HIPB2B</a>
+              <h5 class="mt-0 mb-1">2023 - <em>now</em></h5>
+              <h4>Content and Development Contributor</h4>
+              <a href="https://hipb2b.com">HIPB2B | Freelance</a>
             </div>
           </li>
         </ul>
@@ -232,7 +255,19 @@
       <div class="col-md-4 col-12">
         <ul class="list-unstyled">
           <li class="media">
-            <img class="mr-3 exp-icon" src="images/company_icons/csp.webp" alt="Caitee Smith Photography">
+            <img class="mr-3 exp-icon co-icon" src="images/company_icons/asw.webp" alt="Automotive Specialty Wraps">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">2023 - <em>now</em></h5>
+              <h4>Webmaster and SEO Consultant</h4>
+              <a href="https://www.automotivespecialtywraps.com/">Automotive Specialty Wraps | Freelance</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+	  <div class="col-md-4 col-12">
+        <ul class="list-unstyled">
+          <li class="media">
+            <img class="mr-3 exp-icon co-icon" src="images/company_icons/csp.webp" alt="Caitee Smith Photography">
             <div class="media-body">
               <h5 class="mt-0 mb-1">2015 - <em>now</em></h5>
               <h4>Owner + Photographer</h4>
@@ -241,10 +276,25 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="row">
       <div class="col-md-4 col-12">
         <ul class="list-unstyled">
           <li class="media">
-            <img class="mr-3 exp-icon" src="images/company_icons/hvcc.webp" alt="HVCC">
+            <img class="mr-3 exp-icon co-icon" src="images/company_icons/hipb2b.webp" alt="HIPB2B">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">2013 - 2023</h5>
+              <h4>Front-End Web Developer + Content Manager</h4>
+              <a href="https://hipb2b.com">HIPB2B</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+ 
+      <div class="col-md-4 col-12">
+        <ul class="list-unstyled">
+          <li class="media">
+            <img class="mr-3 exp-icon co-icon" src="images/company_icons/hvcc.webp" alt="HVCC">
             <div class="media-body">
               <h5 class="mt-0 mb-1">2022 - 2023</h5>
               <h4>A.A.S. in Computer Information Systems</h4>
@@ -259,7 +309,7 @@
 <!-- EXPERIENCE AND EDUCATIONS END -->
 
 <!-- PROJECTS START -->
-<section id="projects">
+<section>
   <div class="container" id="work">
     <div class="row">
       <div class="col-12">
@@ -268,86 +318,152 @@
     </div>
     <div class="row">
 	  <!-- WOOFSTOCK -->
-      <div class="col-md-6 col-12 text-center">
+      <div class="col-md-6 col-12 text-center project">
         <a href="https://woofstock.netlify.app/" target="_blank"><img class="img-fluid img-400" src="images/projects/woofstock-mat.webp" alt="Woofstock! landing page"></a>
 		HTML5 | CSS3 | Bootstrap | Netlify
         <h4><a href="https://woofstock.netlify.app/" target="_blank">Landing Page: Woofstock!</a></h4>
 		<a href="https://github.com/caiteesmith/Woofstock" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://woofstock.netlify.app/" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
       </div>
+		
 	  <!-- LINKEDIN DIGEST WEBFLOW -->
-      <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+      <div class="col-md-6 col-12 text-center mt-md-0 mt-2 project">
         <a href="https://www.contentinsiders.com/" target="_blank"><img class="img-fluid img-400" src="images/projects/linkedin-digest-mat.webp" alt="LinkedIn Group Digest"></a>
 		Webflow | HTML5 | CSS3
         <h4><a href="https://www.contentinsiders.com/" target="_blank">LinkedIn Group Digest</a></h4>
 		<a href="https://www.contentinsiders.com" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
       </div>
-    </div><br>
+    </div>
 	  
 	<div class="row">
+	  <!-- ASW LOGO -->
+      <div class="col-md-6 col-12 text-center project">
+        <a href="https://www.caiteesmith.com/images/projects/ASW-hero-patronus-flr.gif" target="_blank"><img class="img-fluid img-400" src="images/projects/ASW-hero-patronus-flr.gif" alt="Landing Page: Cymulate"></a>
+		Adobe After Effects
+        <h4><a href="https://www.caiteesmith.com/images/projects/ASW-hero-patronus-flr.gif" target="_blank">ASW: Animated Logo</a></h4>
+		<a href="https://www.caiteesmith.com/images/projects/ASW-hero-patronus-flr.gif" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+      </div>
+		
 	  <!-- CYMULATE -->
-      <div class="col-md-6 col-12 text-center">
+      <div class="col-md-6 col-12 text-center mt-md-0 mt-2 project">
         <a href="https://tlm-technology-1.com/cymulate/9053/1/index.html" target="_blank"><img class="img-fluid img-400" src="images/projects/cymulate-mat.webp" alt="Landing Page: Cymulate"></a>
 		HTML5 | CSS3 | Bootstrap
         <h4><a href="https://tlm-technology-1.com/cymulate/9053/1/index.html" target="_blank">Landing Page: Cymulate</a></h4>
 		<a href="https://github.com/caiteesmith/Cymulate-Landing-Page" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://tlm-technology-1.com/cymulate/9053/1/index.html" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
       </div>
-	  <!-- THREE JS SPHERE -->
-	  <div class="col-md-6 col-12 text-center">
-        <a href="https://threejs-3d-sphere.netlify.app/" target="_blank"><img class="img-fluid img-400" src="images/projects/three-js-mat.webp" alt="Three.js Sphere"></a>
-		HTML5 | CSS3 | Three.js | Netlify
-        <h4><a href="https://threejs-3d-sphere.netlify.app/" target="_blank">Three.js 3D Sphere</a></h4>
-		<a href="https://github.com/caiteesmith/threejs-sphere" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://threejs-3d-sphere.netlify.app/" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-      </div>
-    </div><br>
+    </div>
 	  
 	<div class="row">
 	  <!-- MARIADB LANDING PAGE -->
-      <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+      <div class="col-md-6 col-12 text-center project">
         <a href="https://tlm-technology-1.com/mariadb/8786/1/index.html" target="_blank"><img class="img-fluid img-400" src="images/projects/mariadb-mat.webp" alt="MariaDB Landing Page"></a>
 		HTML5 | CSS3 | Bootstrap
         <h4><a href="https://tlm-technology-1.com/mariadb/8786/1/index.html" target="_blank">Landing Page: MariaDB</a></h4>
 		<a href="https://github.com/caiteesmith/MariaDb-Landing-Page" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://tlm-technology-1.com/mariadb/8786/1/index.html" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
       </div>
+		
 	   <!-- PORTFOLIO WEBSITE -->
-      <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+      <div class="col-md-6 col-12 text-center mt-md-0 mt-2 project">
         <a href="https://caiteesmith.com/" target="_blank"><img class="img-fluid img-400" src="images/projects/portfolio-mat.webp" alt="Caitee Smith's Portfolio"></a>
 		HTML5 | CSS3 | Bootstrap | Netlify
         <h4><a href="https://caiteesmith.com/" target="_blank">Portfolio</a></h4>
 		<a href="https://github.com/caiteesmith/portfolio-main" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://caiteesmith.com/" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div>
+	  
+	<div class="row">
+	  <!-- THREE JS SPHERE -->
+	  <div class="col-md-6 col-12 text-center">
+        <a href="https://threejs-3d-sphere.netlify.app/" target="_blank"><img class="img-fluid img-400" src="images/projects/threejs.gif" alt="Three.js Sphere"></a>
+		HTML5 | CSS3 | Three.js | Netlify
+        <h4><a href="https://threejs-3d-sphere.netlify.app/" target="_blank">Three.js 3D Sphere</a></h4>
+		<a href="https://github.com/caiteesmith/threejs-sphere" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://threejs-3d-sphere.netlify.app/" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+      </div>
+		
+	  <!-- Cloudinary -->
+      <div class="col-md-6 col-12 text-center mt-md-0 mt-2 project">
+        <a href="https://tlm-technology-1.com/cloudinary/9000/1/index.html" target="_blank"><img class="img-fluid img-400" src="images/projects/cloudinary-mat.webp" alt="Landing Page: Cloudinary"></a>
+		HTML5 | CSS3 | Bootstrap
+        <h4><a href="https://tlm-technology-1.com/cloudinary/9000/1/index.html" target="_blank">Landing Page: Cloudinary</a></h4>
+		<a href="https://github.com/caiteesmith/Cloudinary-Landing-Page" title="Source Code" target="_blank"><i class="bi bi-github"></i></a> <a href="https://tlm-technology-1.com/cloudinary/9000/1/index.html" title="Direct Link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+      </div>
+	</div>
   </div>
 </section>
-<!-- PROJECTS END -->
+<!-- WORK END -->
 	
-<!-- CONTACT SECTION START -->
-<!--
+<!-- ABOUT ME START -->
+<section>
+  <div class="container mt-2" id="about">
+    <h1>About_</h1>
+	  
+	<h3>Background</h3>
+    <div class="row bg">
+		<p>I've worked as a front-end developer in the B2B marketing industry for nearly ten years. In that time, I've learned several other skills such as email development, search engine optimization, content management systems, <a href="https://medium.com/@caiteecodes" class="medium">blogging</a>, designing graphics and branding, and so much more. I've worked professionally as a photographer for eight years, starting my business photographing weddings and lifestyle.</p>
+		<p>I'm currently based in northern New Jersey. Prior to NJ, I lived in New York state for fifteen years (NYC for five of those), Texas for three years, and southern Louisiana my entire childhood.</p>
+	</div>
+	  
+	<h3>Interests</h3>
+    <div class="row">
+        <div class="text-left col-3">
+            <ul>
+				<li><i class="bi bi-star-fill"></i> Hiking in the ADKs</li>
+				<li><i class="bi bi-star-fill"></i> Snowboarding</li>
+				<li><i class="bi bi-star-fill"></i> Japanese cars</li>
+			</ul>
+        </div>
+		<div class="text-left col-3">
+            <ul>
+				<li><i class="bi bi-star-fill"></i> Video games</li>
+				<li><i class="bi bi-star-fill"></i> My cats, Atlas and Gambit</li>
+				<li><i class="bi bi-star-fill"></i> Horror movies</li>
+			</ul>
+        </div>
+		<div class="text-left col-3">
+            <ul>
+				<li><i class="bi bi-star-fill"></i> Sci-fi movies</li>
+				<li><i class="bi bi-star-fill"></i> Kayaking</li>
+				<li><i class="bi bi-star-fill"></i> Good food</li>
+			</ul>
+        </div>
+		<div class="text-left col-3">
+            <ul>
+				<li><i class="bi bi-star-fill"></i> Rock climbing</li>
+				<li><i class="bi bi-star-fill"></i> Traveling</li>
+				<li><i class="bi bi-star-fill"></i> Photography</li>
+			</ul>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT ME END -->
+	
+<!-- CONTACT START -->
 <section>
   <div class="container mt-2" id="contact">
-    <h1>Contact Me_</h1>
+    <h1>Contact_</h1>
     <div class="row">
         <div class="text-center col-12">
-            <form id="feedbackForm" class="text-left" name="validateform" onsubmit="return validateform()" method="post">
+            <form method="POST" id="form" name="form" data-netlify="true" class="text-left">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp" aria-required="true" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" aria-describedby="nameHelp" aria-required="true" tabindex="1" required>
                 <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp" aria-required="true" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" aria-describedby="emailHelp" aria-required="true" tabindex="2" required>
                 <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
               </div>
               <div class="form-group">
-                <textarea rows="6" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp" aria-required="true" required></textarea>
+                <textarea rows="6" cols="100" id="message" name="message" placeholder="Your Message" class="form-control" aria-describedby="messageHelp" aria-required="true" tabindex="3" required></textarea>
                 <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
               </div>
-              <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg">Send</button>
+				
+              <button type="submit" value="submit" name="submit" id="submit" class="btn btn-primary btn-lg" tabindex="4">Let's build something <i class="bi bi-emoji-smile-fill"></i></button>
             </form>
         </div>
     </div>
   </div>
 </section>
--->
-<!-- CONTACT SECTION END -->
+<!-- CONTACT END -->
 
 <!-- FOOTER START -->
 <hr>
@@ -367,6 +483,27 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
 <script src="js/console.js"></script>
+	
+<script>
+	const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("Thank you for your message! I'll get back to you as soon as possible."))
+      .catch((error) => alert(error));
+  	};
+
+  document
+    .querySelector("form")
+    .addEventListener("submit", handleSubmit);
+</script>
 	
 </div>
 </body>

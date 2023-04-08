@@ -47,6 +47,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scroll-behavior: smooth;
+	background-color: hsla(28,100%,74%,0.5);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -2067,10 +2068,10 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #ff85a7;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(230, 230, 250, 1);
+  box-shadow: 0 0 0 0.2rem rgba(255, 133, 167, 0.5);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -2547,7 +2548,7 @@ textarea.form-control {
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 133, 167, 0.25);
 }
 
 .btn.disabled, .btn:disabled {
@@ -2573,27 +2574,27 @@ fieldset:disabled a.btn {
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  background-color: #ff85a7;
+  border-color: #ff85a7;
+  box-shadow: 0 0 0 0.2rem rgba(255, 133, 167, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #FF5886;
+  border-color: #FF5886;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  background-color: #FF5886;
+  border-color: #FF5886;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 133, 167, 0.5);
 }
 
 .btn-secondary {
