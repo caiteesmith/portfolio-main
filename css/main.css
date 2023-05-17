@@ -79,6 +79,7 @@ ul {
 }
 
 #header_left h1 {
+	width: 100%;
 	font-size: 4.5em;
 	font-family: 'Space Grotesk', sans-serif;
 	font-weight: 600;
@@ -120,9 +121,21 @@ ul {
 }
 
 .rotatingTitle:nth-of-type(3) {
-  animation-name: rotate-last;
+  animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 3s;
+}
+
+.rotatingTitle:nth-of-type(4) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 4.25s;
+}
+
+.rotatingTitle:nth-of-type(5) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 5.5s;
   animation-fill-mode: forwards;
 }
 
@@ -160,7 +173,7 @@ ul {
 }
 
 #header_left h3 {
-	margin-top: 1.5em;
+	margin-top: 1.25em;
 	font-size: 2em;
 }
 
@@ -339,7 +352,7 @@ h6 {
   }
 	
   #header_left h3 {
-	margin-top: 1.75em;
+	margin-top: 1.25em;
   }
 }
 
