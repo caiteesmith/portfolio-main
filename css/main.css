@@ -356,12 +356,13 @@ h6 {
     font-size: 2.75em;
     left: 0;
     right: 0;
-    margin-top: 2.5em;
+    margin-top: 2.1em;
+	margin-bottom: 0;
     top: 0;
   }
 	
   #header_left h3 {
-	margin-top: 0em;
+	margin-top: -1em;
   }
 	
   .year {
@@ -403,7 +404,7 @@ h6 {
     }
 	
 	.year {
-	  font-size: 1.25em;
+	  font-size: 2em;
 	  vertical-align: middle;
   	}
 	
@@ -436,8 +437,8 @@ h6 {
 	}
 	
 	#header_left h3 {
-		margin-top: 2em;
-		font-size: 1.7em;	
+		margin-top: 1.5em;
+		font-size: 1.6em;	
 	}
 	
 	#header_left h4 {
@@ -458,8 +459,8 @@ h6 {
     }
 	
 	#header_left h3 {
-	  font-size: 2.65em;
-      margin-top: 1.2em;
+	  font-size: 2em;
+      margin-top: 1.4em;
 	}
 	
 	.img-400 {
@@ -505,15 +506,15 @@ h6 {
 
 @media (max-width: 575.98px) {
 	.rotatingTitle {
-      font-size: 2.25em;
-      margin-top: 1.75em;
+      font-size: 2.5em;
+      margin-top: 1.3em;
       opacity: 0;
       top: 0;
     }
 	
 	#header_left h3 {
-	  font-size: 2.5em;
-      margin-top: 1.55em;
+	  font-size: 2em;
+      margin-top: 1.3em;
 	}
 	
 	.section-title {
@@ -528,6 +529,46 @@ h6 {
   		-ms-flex: 0 0 50%;
 		flex: 0 0 50%;
 		max-width: 50%;
+	}
+}
+
+@media (max-width: 525px) {
+	.rotatingTitle {
+      font-size: 7vw;
+      margin-top: 1.5em;
+      opacity: 0;
+      top: 0;
+    }
+	
+	#header_left h3 {
+	  font-size: 5vw;
+      margin-top: 1.5em;
+	}
+	
+	.year {
+		font-size: 8vw;
+	}
+}
+
+@media (max-width: 425px) {
+	#header_left h1 {
+	  font-size: 10vw;
+	}
+	
+	.rotatingTitle {
+      font-size: 7vw;
+      margin-top: 1.7em;
+      opacity: 0;
+      top: 0;
+    }
+	
+	#header_left h3 {
+	  font-size: 5vw;
+      margin-top: 1.75em;
+	}
+	
+	.year {
+		font-size: 8vw;
 	}
 }
 
