@@ -190,6 +190,12 @@ ul {
     -webkit-text-fill-color: transparent;
 }
 
+.year:hover {
+	background: -webkit-radial-gradient(#ff85ad, #6b66ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #header_left h4 {
 	font-size: 1.68em;
 }
