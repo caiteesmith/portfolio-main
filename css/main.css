@@ -512,6 +512,10 @@ figcaption {
       top: 0;
     }
 	
+	#header-left-blog h1 {
+		font-size: 7vw;
+	}
+	
 	#header_left h3 {
 	  font-size: 2em;
       margin-top: 1.4em;
@@ -621,8 +625,17 @@ figcaption {
 		text-align: left;
 	}
 	
+	#header-left-blog h1 {
+		font-size: 2.5em;
+	}
+	
 	#header_left h1 {
-	  font-size: 10vw;
+	  font-size: 11vw;
+	}
+	
+	#blog h3 {
+		font-size: 6vw;
+		font-weight: bold;
 	}
 	
 	.rotatingTitle {
