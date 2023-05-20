@@ -55,6 +55,12 @@ font-family: 'Syne', sans-serif;
 /* BODY END */
 
 /* GENERAL  */
+a {
+  color: #706154;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
