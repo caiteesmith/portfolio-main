@@ -126,7 +126,10 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+	border-left: 2px solid #000;
+	padding: 0 0 0 0.75rem;
+    margin: 0.5rem 0 0 0;
+    font-style: italic;
 }
 
 b,
@@ -190,6 +193,8 @@ pre {
 }
 
 figure {
+	width: 600px;
+	max-width: 100%;
   margin: 0 0 1rem;
 }
 
@@ -211,7 +216,7 @@ caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #6c757d;
-  text-align: left;
+  text-align: center;
   caption-side: bottom;
 }
 
