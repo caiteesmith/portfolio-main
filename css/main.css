@@ -357,6 +357,9 @@ h6 {
 /* ABOUT SECTION END */
 
 /* BLOG SECTION START */
+#header-left-blog h1 {
+	font-size: 5vw;
+}
 
 .arrow-down-blog {
 	margin-top: 2em;
