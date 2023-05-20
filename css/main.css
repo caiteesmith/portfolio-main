@@ -582,6 +582,10 @@ figcaption {
       top: 0;
     }
 	
+	#blog h3 {
+		font-size: 5vw;
+	}
+	
 	#header_left h3 {
 	  font-size: 2em;
       margin-top: 1.3em;
