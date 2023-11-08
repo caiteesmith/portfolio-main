@@ -107,7 +107,7 @@ ul {
 
 .rotatingTitle {
   font-family: 'Syne', sans-serif;
-  font-size: 2.25em;
+  font-size: 2.16em;
   font-style: normal;
   font-weight: 700;
   left: 0;
@@ -413,7 +413,7 @@ figcaption {
 
 @media (min-width: 1199.98px) {
   .rotatingTitle {
-    font-size: 2.75em;
+    font-size: 2.25em;
     left: 0;
     right: 0;
     margin-top: 2.1em;
@@ -512,8 +512,8 @@ figcaption {
 
 @media (max-width: 767.98px) {		
 	.rotatingTitle {
-      font-size: 2.65em;
-      margin-top: 1.25em;
+      font-size: 2.25em;
+      margin-top: 1.5em;
       opacity: 0;
       top: 0;
     }
@@ -582,8 +582,8 @@ figcaption {
 
 @media (max-width: 575.98px) {
 	.rotatingTitle {
-      font-size: 2.5em;
-      margin-top: 1.3em;
+      font-size: 2.2em;
+      margin-top: 1.6em;
       opacity: 0;
       top: 0;
     }
@@ -614,8 +614,8 @@ figcaption {
 
 @media (max-width: 525px) {
 	.rotatingTitle {
-      font-size: 7vw;
-      margin-top: 1.5em;
+      font-size: 6.5vw;
+      margin-top: 1.6em;
       opacity: 0;
       top: 0;
     }
@@ -649,8 +649,8 @@ figcaption {
 	}
 	
 	.rotatingTitle {
-      font-size: 7vw;
-      margin-top: 1.7em;
+      font-size: 6.2vw;
+      margin-top: 2.2em;
       opacity: 0;
       top: 0;
     }
