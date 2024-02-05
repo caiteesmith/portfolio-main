@@ -433,6 +433,13 @@ figcaption a {
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
 }
+
+.footer-heart:hover {
+	color: #ff85a7;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+	cursor:crosshair;
+}
 /*
 .snip1567:hover i,
 .snip1567.hover i {
