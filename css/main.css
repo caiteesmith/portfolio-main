@@ -40,6 +40,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+.project-ul {
+  list-style: disc;
+  padding: 0;
+  margin-left: 1.5em;
+}
 /* HERO SECTION START */
 .nav-item {
   list-style-type: none;
@@ -108,9 +113,14 @@ ul {
   animation-delay: 4.25s;
 }
 .rotatingTitle:nth-of-type(5) {
-  animation-name: rotate-last;
+  animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 5.5s;
+}
+.rotatingTitle:nth-of-type(6) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 6.75s;
   animation-fill-mode: forwards;
 }
 @keyframes rotate {
@@ -153,6 +163,19 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 .year:hover {
+  background: -webkit-radial-gradient(#ff85ad, #6b66ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.keyword {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1em;
+  color: #212529;
+  background: -webkit-radial-gradient(#6b66ff, #ff85ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.keyword:hover {
   background: -webkit-radial-gradient(#ff85ad, #6b66ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
