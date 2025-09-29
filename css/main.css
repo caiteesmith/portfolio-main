@@ -225,6 +225,17 @@ ul {
   -webkit-backdrop-filter: blur(8px);
   transition: all 0.25s ease-in-out;
 }
+.hit-project {
+	padding: 2em 1.5em;
+ 	margin-bottom: 2em;
+  	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.25s ease-in-out;
+}
 .project {
   transition: all 0.15s ease-in-out;
   /*	margin-bottom: 1em;*/
