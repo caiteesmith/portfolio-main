@@ -614,10 +614,16 @@ figcaption a {
   #header-left-blog h1 {
     font-size: 7vw;
   }
+	.keyword {
+		font-size: 6vw;
+	}
   #header_left h3 {
     font-size: 2em;
     margin-top: 1.4em;
   }
+	.intro-spacer {
+		height: 10em;
+	}
   .img-400 {
     width: 100%;
     height: 375px;
@@ -723,6 +729,9 @@ figcaption a {
     font-size: 5vw;
     margin-top: 1.5em;
   }
+	.intro-spacer {
+		height: 5em;
+	}
   .year {
     font-size: 8vw;
   }
@@ -734,9 +743,16 @@ figcaption a {
   #header-left-blog h1 {
     font-size: 2.5em;
   }
+  #header_left h3 {
+    font-size: 2em;
+    margin-top: 1.4em;
+  }
   #header_left h1 {
     font-size: 11vw;
   }
+	.intro-spacer {
+		height: 3em;
+	}
   #blog h3 {
     font-size: 6vw;
     font-weight: bold;
