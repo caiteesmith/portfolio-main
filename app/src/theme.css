@@ -1,0 +1,58 @@
+/* src/theme.css */
+
+/* Light theme variables (your original vibe) */
+:root {
+  --ink: #212529;            /* text */
+  --link: #706154;
+  --panel-bg: rgba(255,255,255,.15);
+  --panel-border: rgba(255,255,255,.10);
+  --panel-hover: rgba(255,255,255,.30);
+  --theme-color: #DED7D2;    /* meta theme-color for mobile bars */
+
+  /* gradient stops */
+  --bg1: hsla(28,100%,74%,1);     /* peach */
+  --bg2: hsla(355,100%,93%,1);    /* very light pink */
+  --bg3: hsla(340,100%,76%,1);    /* pink */
+  --bg4: hsla(22,100%,77%,1);     /* apricot */
+  --bg5: hsla(242,100%,70%,1);    /* lavender/indigo */
+  --bg6: hsla(343,100%,76%,1);    /* magenta */
+
+  /* blobs */
+  --blob-opacity: .28;      /* was .18 */
+  --blob-blur: 100px;       /* a hair softer */
+  --blob-sat: 1.15;         /* richer ink on pastels */
+  --blob-blend: overlay;    /* pops on light gradient */
+
+  /* logo */
+  --logo-base: #111111;     /* base (was black) for light mode */
+  --logo-accent-1: #ff85a7; /* your pink */
+  --logo-accent-2: #ff9b6b; /* your peach */
+}
+
+/* Dark theme variables (deeper, moodier) */
+.dark {
+  --ink: #f4f0f6;
+  --link: #ff85a7;
+  --panel-bg: rgba(15, 15, 20, .65);
+  --panel-border: rgba(255,255,255,.08);
+  --panel-hover: rgba(255,255,255,.12);
+  --theme-color: #1a1a1f;
+  --bg-motion: linear-gradient(135deg, #1b0f14, #2a1530);
+  --bg-solid: #1b0f14; /* deep plum background */
+
+  /* blobs */
+  --blob-opacity: .36;
+  --blob-blur: 100px;
+  --blob-sat: 1.0;
+  --blob-blend: normal;
+
+  /* logo */
+  --logo-base: #ffffff;     /* base flips to white in dark mode */
+  --logo-accent-1: #ff6b9d; /* slightly deeper variants for dark */
+  --logo-accent-2: #ff8a52;
+}
+
+/* Base text + links to your palette */
+body { color: var(--ink); }
+a { color: var(--link); text-decoration: none; transition: color .2s ease; }
+a:hover { color: #353C42; }

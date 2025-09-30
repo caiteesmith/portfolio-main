@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.soft-blob {
+  position: absolute;
+  border-radius: 9999px;
+  will-change: transform, filter;
+  pointer-events: none;
+  mix-blend-mode: var(--blob-blend, multiply);
+  opacity: var(--blob-opacity, .18);
+  filter: blur(var(--blob-blur, 90px)) saturate(var(--blob-sat, 1.05));
+}
+
+@keyframes bg-idle {
+  0%   { filter: saturate(1) }
+  50%  { filter: saturate(1.05) }
+  100% { filter: saturate(1) }
+}
+
+/* App-wide background that mirrors your original */
+@layer utilities {
+  .portfolio-bg {
+    background:
+      radial-gradient(at 40% 20%, var(--bg1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%,  var(--bg2) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, var(--bg3) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, var(--bg4) 0px, transparent 50%),
+      radial-gradient(at 80% 100%,var(--bg5) 0px, transparent 50%),
+      radial-gradient(at 0% 0%,   var(--bg6) 0px, transparent 50%);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .dark .portfolio-bg {
+    background: var(--bg-solid);
+    }
+  .glass {
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .glass:hover { background: var(--panel-hover); }
+
+  .mask-logo {
+    -webkit-mask: url('/images/logos/logo-anim.svg') no-repeat center / contain;
+    mask: url('/images/logos/logo-anim.svg') no-repeat center / contain;
+  }
+}
