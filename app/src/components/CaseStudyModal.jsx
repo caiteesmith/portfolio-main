@@ -1,8 +1,40 @@
+import { useEffect } from "react";
+import { createPortal } from "react-dom";
+
 export default function CaseStudyModal({ open, onClose }) {
+  useEffect(() => {
+    if (!open) return;
+
+    /** @param {KeyboardEvent} e */
+    const onKey = (e) => {
+      if (e.key === "Escape") onClose?.();
+    };
+
+    document.addEventListener("keydown", onKey);
+
+    // Lock background scroll while modal is open
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [open, onClose]);
+
   if (!open) return null;
 
-  return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6">
+  return createPortal(
+    <div
+      className="
+        fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6
+        h-screen supports-[height:100dvh]:h-[100dvh]
+        overflow-y-auto overscroll-contain
+        [padding-top:env(safe-area-inset-top)]
+        [padding-bottom:env(safe-area-inset-bottom)]
+      "
+      style={{ touchAction: "pan-y" }}
+    >
       {/* Lighter overlay */}
       <button
         type="button"
@@ -20,21 +52,27 @@ export default function CaseStudyModal({ open, onClose }) {
           ring-1 ring-black/10 dark:ring-white/10
           bg-white/65 dark:bg-zinc-900/70
           backdrop-blur-lg
+          max-h-[90dvh] overflow-y-auto
         "
       >
-        <div className="flex items-start justify-between gap-3">
-          <h3 className="text-xl font-semibold">Health of IT (HIT): Case Study</h3>
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label="Close dialog"
-            className="rounded-full p-2 hover:bg-black/5 dark:hover:bg-white/10"
-          >
-            ✕
-          </button>
+        <div className="sticky top-0 z-10 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-md rounded-full p-2">
+          <div className="grid grid-cols-3 items-center">
+            <span />
+            <h3 className="text-xl font-semibold text-center">Health of IT (HIT)</h3>
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Close dialog"
+              className="justify-self-end rounded-full p-2 hover:bg-black/5 dark:hover:bg-white/10"
+            >
+              ✕
+            </button>
+          </div>
         </div>
 
         <p className="mt-3 text-sm opacity-90">
+          <strong>Case Study</strong>
+          <br/>
           Enterprise microservices platform for real-time product health, alerts, and a web dashboard.
           Built on .NET 8 Azure Functions with Cosmos DB and Azure Service Bus, deployed via Terraform
           and Azure Pipelines.
@@ -211,6 +249,7 @@ export default function CaseStudyModal({ open, onClose }) {
           *UI and proprietary details omitted to respect company confidentiality. Happy to discuss system design and lessons learned.
         </p>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
