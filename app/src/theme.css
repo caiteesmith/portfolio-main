@@ -95,3 +95,21 @@ a:hover { color: var(--link-hover); }
   isolation: isolate; /* keeps inner effects contained */
 }
 .glass:hover { background: var(--panel-hover); }
+
+.modal-overlay {
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.glass-strong {
+  --panel-bg: rgba(255,255,255,.72);
+  --panel-border: rgba(0,0,0,.06);
+}
+.dark .glass-strong {
+  --panel-bg: rgba(15,15,20,.72);
+  --panel-border: rgba(255,255,255,.14);
+}
+
+.modal-content { color: var(--ink); }
+.modal-content * { color: inherit; }
