@@ -2,7 +2,7 @@ export default function CaseStudyModal({ open, onClose }) {
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center">
-      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+      <div className="absolute inset-0 bg-black/20" onClick={onClose} />
       <div className="relative z-[70] w-full max-w-3xl rounded-2xl glass p-6">
         <div className="flex items-start justify-between">
           <h3 className="text-xl font-semibold">Health of IT (HIT): Case Study</h3>

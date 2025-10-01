@@ -85,3 +85,13 @@ body { color: var(--ink); }
 a { color: var(--link); text-decoration: none; transition: color .2s ease; }
 button { color: var(--pink-link); text-decoration: none; transition: color .2s ease; }
 a:hover { color: var(--link-hover); }
+
+.glass {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(12px) saturate(1.1);
+  -webkit-backdrop-filter: blur(12px) saturate(1.1); /* Safari */
+  background-clip: padding-box;
+  isolation: isolate; /* keeps inner effects contained */
+}
+.glass:hover { background: var(--panel-hover); }
