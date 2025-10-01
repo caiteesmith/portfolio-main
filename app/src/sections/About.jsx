@@ -34,7 +34,7 @@ export default function About() {
 
           <p>
             Outside of code, I'm also a{" "}
-            <a href="https://www.caiteesmithphotography.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.caiteesmithphotography.com/" target="_blank" rel="noreferrer" style={{ "--link": "#ff85a7", "--link-hover": "#ff8a52" }}>
               wedding photographer
             </a>
             , which balances structure with creativity and keeps me grounded in storytelling. 

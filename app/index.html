@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
+    <script>
+      (function () {
+        const saved = localStorage.getItem('cs-theme-dark');
+        const dark = saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
+
     <meta charset="UTF-8" />
     <!-- Standard favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">

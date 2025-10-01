@@ -14,7 +14,7 @@ export default function Writing() {
           </CardHeader>
           <CardFooter>
             <Button asChild variant="ghost">
-              <a href={w.href} target="_blank" rel="noreferrer">
+              <a href={w.href} target="_blank" rel="noreferrer" style={{ "--link": "#ff85a7", "--link-hover": "#ff8a52" }}>
                 <LinkIcon className="h-4 w-4 mr-2" />
                 Read on Medium
               </a>

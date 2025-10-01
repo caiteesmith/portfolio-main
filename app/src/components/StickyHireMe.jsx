@@ -10,7 +10,7 @@ export default function StickyHireMe() {
   if (!show) return null;
   return (
     <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50">
-      <Button asChild size="lg" className="shadow-xl backdrop-blur bg-black text-white dark:bg-white dark:text-black">
+      <Button asChild size="lg" variant="primaryPink" className="shadow-xl backdrop-blur">
         <a href="#contact" aria-label="Jump to contact">👋 Hire me</a>
       </Button>
     </div>

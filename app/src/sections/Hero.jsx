@@ -25,8 +25,8 @@ export default function Hero(){
           </AnimatePresence>
         </div>
         <div className="mt-6 flex gap-2">
-          <Button asChild><a href="#projects"><Sparkles className="h-4 w-4 mr-2"/>See projects</a></Button>
-          <Button asChild variant="outline"><a href="/docs/Resume-Caitlyn-Smith-nocontact.pdf" target="_blank" rel="noreferrer"><ExternalLink className="h-4 w-4 mr-2"/>Resumé</a></Button>
+          <Button asChild variant="primaryPink"><a href="#projects"><Sparkles className="h-4 w-4 mr-2"/>See projects</a></Button>
+          <Button asChild variant="primaryOrange"><a href="/docs/Resume-Caitlyn-Smith-nocontact.pdf" target="_blank" rel="noreferrer"><ExternalLink className="h-4 w-4 mr-2"/>Resumé</a></Button>
         </div>
       </div>
       <div>

@@ -63,7 +63,7 @@ export default function Projects({ onOpenCaseStudy }) {
                     <Button size="sm" onClick={onOpenCaseStudy}>Case study</Button>
                   ) : (
                     <>
-                      <Button asChild size="sm">
+                      <Button asChild size="sm"  variant="outline">
                         <a href={p.href} target="_blank" rel="noreferrer"><ExternalLink className="h-4 w-4 mr-1" />Live</a>
                       </Button>
                       {p.code && (

@@ -9,7 +9,7 @@ export const WRITING = [
     href:"https://medium.com/@caiteecodes/better-off-dead-10-outdated-web-design-trends-were-happy-to-forget-cfab0d94cea5"
   },
   {
-    title:"Dwight, You Ignorant Marketer",
+    title:"Dwight, You Ignorant Marketer: 12 Marketing Principles That We’ve Learned From The Office",
     href:"https://medium.com/@caiteecodes/dwight-you-ignorant-marketer-12-sales-and-marketing-principles-that-weve-learned-from-the-office-7b2aa9d7b89f"
   },
   {

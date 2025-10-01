@@ -37,7 +37,7 @@ export default function Contact(){
           </div>
           <div className="mt-3"><label htmlFor="message" className="text-sm">Message</label><Textarea id="message" name="message" required placeholder="What are we building?" rows={6} /></div>
           <div className="flex items-center gap-3 mt-4">
-            <Button type="submit" disabled={sending}>{sending ? "Sending…" : (<><Send className="h-4 w-4 mr-2" />Submit</>)}</Button>
+            <Button variant="primaryPink" type="submit" disabled={sending}>{sending ? "Sending…" : (<><Send className="h-4 w-4 mr-2" />Submit</>)}</Button>
             {sent && <span className="text-sm text-green-600 dark:text-green-400">Thank you! I'll reply soon.</span>}
           </div>
         </form>

@@ -43,18 +43,14 @@ export default function Header({ dark, setDark, active }) {
           {NAV.map((item) => {
             const isActive = active === item.id;
             return (
-              <a
+              <Button
                 key={item.id}
-                href={`#${item.id}`}
-                aria-current={isActive ? "page" : undefined}
-                className={`px-3 py-1.5 rounded-full transition-all duration-300 ease-in-out ${
-                  isActive
-                    ? "bg-black text-white dark:bg-white dark:text-black"
-                    : "hover:bg-gray-100 dark:hover:bg-gray-800"
-                }`}
+                asChild
+                variant={active === item.id ? "default" : "ghost"}
+                className="rounded-full"
               >
-                {item.label}
-              </a>
+                <a href={`#${item.id}`} className="nav-link">{item.label}</a>
+              </Button>
             );
           })}
         </nav>

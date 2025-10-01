@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,5 +48,29 @@
   .mask-logo {
     -webkit-mask: url('/images/logos/logo-anim.svg') no-repeat center / contain;
     mask: url('/images/logos/logo-anim.svg') no-repeat center / contain;
+  }
+
+  .btn-cta,
+  .btn-cta a {
+    color: var(--cta-fg) !important;      /* force solid readable text */
+  }
+
+  .btn-cta svg {
+    color: currentColor;
+    stroke: currentColor;
+    opacity: 1 !important;                 /* no faded icons */
+  }
+
+  button a { color: inherit; }
+  button svg { color: currentColor; stroke: currentColor; }
+
+  /* Dark-mode nav: neutral by default, pink only on hover/focus */
+  .dark .nav-link {
+    /* neutral ink with a touch of transparency */
+    color: color-mix(in srgb, var(--ink) 80%, transparent);
+  }
+  .dark .nav-link:hover,
+  .dark .nav-link:focus-visible {
+    color: var(--cta-pink);
   }
 }

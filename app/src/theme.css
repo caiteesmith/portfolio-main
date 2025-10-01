@@ -4,6 +4,7 @@
 :root {
   --ink: #212529;            /* text */
   --link: #706154;
+  --link-hover: #ff85a7;
   --panel-bg: rgba(255,255,255,.15);
   --panel-border: rgba(255,255,255,.10);
   --panel-hover: rgba(255,255,255,.30);
@@ -27,12 +28,33 @@
   --logo-base: #111111;     /* base (was black) for light mode */
   --logo-accent-1: #ff85a7; /* your pink */
   --logo-accent-2: #ff9b6b; /* your peach */
+
+  /* CTA colors for LIGHT mode */
+  --cta-fg:     #0f172a; 
+  --cta-ring:   var(--cta-pink);
+  
+  --cta-pink: #ff6aa3;
+  --cta-pink-from: #ff6aa3;
+  --cta-pink-to: #ff8bb3;
+
+  --cta-orange: #ff8a52;
+  --cta-orange-from: #ff8a52;
+  --cta-orange-to: #ffc078;
+
+  --cta-fg: #ffffff;               /* text/icon on bright CTAs */
+  --cta-ring: rgba(255, 133, 167, .35);
+
+  /* used for gradient outline inner fill so borders look right */
+  --button-fill: #ffffff;
 }
 
 /* Dark theme variables (deeper, moodier) */
 .dark {
   --ink: #f4f0f6;
-  --link: #ff85a7;
+  --link: #f4f0f6;
+  --link-hover: #ff85a7;
+  --pink-link: #ff85a7;
+  --pink-link-hover: #f4f0f6;
   --panel-bg: rgba(15, 15, 20, .65);
   --panel-border: rgba(255,255,255,.08);
   --panel-hover: rgba(255,255,255,.12);
@@ -50,9 +72,16 @@
   --logo-base: #ffffff;     /* base flips to white in dark mode */
   --logo-accent-1: #ff6b9d; /* slightly deeper variants for dark */
   --logo-accent-2: #ff8a52;
+  
+  --cta-pink:   #ff6b9d;
+  --cta-orange: #ff8a52;
+  --cta-fg:     #0b1020; 
+  --cta-ring:   var(--cta-pink);
+  --button-fill: #141116;          /* inner fill for gradient outline in dark */
 }
 
 /* Base text + links to your palette */
 body { color: var(--ink); }
 a { color: var(--link); text-decoration: none; transition: color .2s ease; }
-a:hover { color: #353C42; }
+button { color: var(--pink-link); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--link-hover); }
