@@ -72,7 +72,7 @@ export default function About() {
             {[
               "🚗 Drives a 2020 Subaru WRX STI",
               "🏔️ Hiked 35/46 ADK High Peaks",
-              "🏴 Traveled to Scotland",
+              "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Traveled to Scotland",
               "🇮🇪 Traveled to Ireland",
               "🇯🇵 Traveled to Japan",
               "🇨🇦 Traveled to Banff",
