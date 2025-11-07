@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import "./theme.css";
@@ -14,7 +13,6 @@ import CaseStudyModal from "@/components/CaseStudyModal";
 import useLocalStorage from "@/hooks/useLocalStorage";
 import useActiveSection from "@/hooks/useActiveSection";
 
-// Sections
 import Hero from "@/sections/Hero";
 import Expertise from "@/sections/Expertise";
 import Experience from "@/sections/Experience";
@@ -24,7 +22,6 @@ import Writing from "@/sections/Writing";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 
-// Icons for Section headers
 import {
   BriefcaseBusiness,
   User2,
@@ -36,7 +33,6 @@ import {
 } from "lucide-react";
 
 export default function App() {
-  // global theme
   const [dark, setDark] = useLocalStorage("cs-theme-dark", true);
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
@@ -44,11 +40,9 @@ export default function App() {
     if (themeColor) themeColor.setAttribute("content", dark ? "#0a0a0a" : "#ffffff");
   }, [dark]);
 
-  // active nav section
   const sectionIds = ["home","expertise","education","experience","projects","writing","about","contact"];
   const active = useActiveSection(sectionIds);
 
-  // projects modal
   const [showHit, setShowHit] = useState(false);
 
   return (
