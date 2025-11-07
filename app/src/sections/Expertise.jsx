@@ -1,4 +1,3 @@
-import Badge from "@/components/ui/Badge";
 import { SKILL_TAGS } from "@/data/skills";
 
 export default function Expertise(){

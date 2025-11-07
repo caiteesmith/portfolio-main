@@ -9,6 +9,8 @@ export const SKILL_TAGS = [
   "CI/CD",
   "Clean Architecture",
   "Debugging",
+  "Docker",
+  "Documentation",
   "HTML/CSS",
   "Java",
   "Kudu",

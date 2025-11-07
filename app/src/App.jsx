@@ -56,7 +56,7 @@ export default function App() {
       <ScrollProgress />
       <MotionBackground dark={dark} />
 
-      {/* Header (sticky, owns theme toggle and highlights active link) */}
+      {/* Header */}
       <Header dark={dark} setDark={setDark} active={active} />
 
       <main className="relative z-10">
