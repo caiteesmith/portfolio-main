@@ -1,5 +1,32 @@
 export const PROJECTS = [
   {
+    id: "chatbots",
+    title: "AI/ML Chatbot Containerization",
+    org: "Valley Bank",
+    summary:
+      "Modernizing internal DataRobot AI chatbots by containerizing services with Docker Compose and preparing them for Kubernetes deployment.",
+    href: null,
+    code: null,
+    tags: [
+      "Docker",
+      "Docker Compose",
+      "DataRobot",
+      "Streamlit",
+      "Python",
+      "AI/ML",
+      "Containerization",
+      "Kubernetes (planned)"
+    ],
+    impact: [
+      "Containerized multiple Streamlit applications for reproducible environments",
+      "Designed Docker Compose architecture to streamline local deployment",
+      "Improved reliability and portability across engineering teams",
+      "Designed Docker Compose architecture to streamline local deployment",
+      "Laid groundwork for internal Kubernetes hosting and orchestration",
+      "Collaborated cross-team to align services with existing CI/CD and infrastructure"
+    ]
+  },
+  {
     id: "hit",
     title: "Health of IT (HIT) Microservices",
     org: "Valley Bank",
