@@ -12,17 +12,33 @@ export default function Experience() {
       when: "Jan 2025 - now",
       logo: "vb",
       chips: [
-        ".NET 8", "Azure Functions",
+        ".NET 8",
+        "Azure Functions",
         "Cosmos DB",
         "Docker",
-        "Azure DevOps CI/CD",
-        "Unit tests",
+        "Azure DevOps",
+        "CI/CD pipelines",
+        "Unit testing",
         "Clean Architecture",
         "REST APIs",
         "OpenAPI",
-        "Scrum ceremonies",
-        "Deployments",
-      ],    
+        "Agile/Scrum",
+        "Cloud deployments",
+      ],
+    },
+    {
+      role: "Owner, Wedding Photographer",
+      org: "Caitee Smith Photography",
+      when: "Jun 2018 - now",
+      logo: "csp",
+      chips: [
+        "Business operations",
+        "Client experience",
+        "Wedding day coordination",
+        "High-volume photo editing",
+        "Content strategy",
+        "Team & vendor management",
+      ],
     },
     {
       role: "Software Development Intern",
@@ -30,11 +46,11 @@ export default function Experience() {
       when: "Jun 2024 - Dec 2024",
       logo: "vb",
       chips: [
-        "Intern group project lead (VIP)",
+        "Intern project leadership",
         ".NET microservice fundamentals",
         "Pair programming",
         "Code reviews",
-        "Internship documentation",
+        "Technical documentation",
       ],
     },
     {
@@ -44,10 +60,25 @@ export default function Experience() {
       logo: "thorlabs",
       chips: [
         "Swift (iOS)",
-        "Java (Android)", 
-        "UI modernization & accessibility", 
-        "Coordination with engineering teams",
-        "App Store & Play Store releases"],
+        "Java (Android)",
+        "UI modernization",
+        "Cross-team engineering collaboration",
+        "App Store & Play Store releases",
+      ],
+    },
+    {
+      role: "Digital Marketing Manager",
+      org: "Automotive Specialty Wraps",
+      when: "Mar 2023 - Nov 2023",
+      logo: "asw",
+      chips: [
+        "Website UI/UX optimization",
+        "Technical & on-page SEO",
+        "Performance analytics",
+        "Social media strategy",
+        "Multi-format content production",
+        "Blog optimization",
+      ],
     },
     {
       role: "Web Developer",
@@ -55,10 +86,12 @@ export default function Experience() {
       when: "May 2013 - Mar 2023",
       logo: "hipb2b",
       chips: [
-        "Landing pages", 
-        "PHP form handling", 
-        "SEO & performance tuning", 
-        "Email automation integrations"],
+        "Landing page development",
+        "PHP form processing",
+        "SEO & performance optimization",
+        "WordPress maintenance",
+        "CMS administration",
+      ],
     },
   ];
 
@@ -80,36 +113,31 @@ export default function Experience() {
         text: "Since joining Valley, Caitee has shown how she can be relied upon to see things through to completion. This is in recognition of the ownership she has taken in further developing solutions in support of Valley's overall strategy to build and deploy services for our partners.",
         author: "Manager",
         authorRole: "Enterprise Solution Architecture",
-        org: "Valley Bank",
-        roleAtTime: "Back-End Developer",
+        org: "Valley Bank"
       },
       {
         text: "I'd like to give a special thanks to Caitee Smith for being an amazing group leader for our internship group project.",
         author: "Co-Intern",
         authorRole: "Valley's Internship Program (VIP)",
-        org: "Valley Bank",
-        roleAtTime: "Back-End Developer",
+        org: "Valley Bank"
       },
       {
         text: "Caitee has really stepped up for the team. Her productivity is through the roof. She listens and learns and applies new knowledge to achieve new goals for the team. She is the star of the development team.",
         author: "Manager",
         authorRole: "Enterprise Solution Architecture",
-        org: "Valley Bank",
-        roleAtTime: "Back-End Developer",
+        org: "Valley Bank"
       },
       {
         text: "I want to thank Caitee for her perserverance and commitment to getting the latest release out for 2 of our updated microservices. The pre-deployment steps had a lot of challenges and her focus made the release a success. Thank you, Caitee!",
         author: "Solution Architect",
         authorRole: "Enterprise Solution Architecture",
-        org: "Valley Bank",
-        roleAtTime: "Back-End Developer",
+        org: "Valley Bank"
       },
       {
         text: "Thank you, Caitee, for showing true ownership of a project and sticking through all the hurdles with the deployment and ensuring it goes live!",
         author: "Manager",
         authorRole: "Enterprise Solution Architecture",
-        org: "Valley Bank",
-        roleAtTime: "Back-End Developer",
+        org: "Valley Bank"
       },
     ];
 
@@ -214,7 +242,7 @@ export default function Experience() {
                   <div className="font-medium">{q.author || "Coworker"}</div>
                   <div>
                     {q.authorRole ? `${q.authorRole} · ` : ""}
-                    {q.org} ({q.roleAtTime})
+                    {q.org}
                   </div>
                 </div>
               </div>
