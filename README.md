@@ -6,17 +6,12 @@ This repository contains the source code for my personal portfolio website. The 
 
 <img src="https://user-images.githubusercontent.com/7319667/227025874-89e8b2dc-8ceb-4d9f-8c9f-7b0b57264a5b.svg" width="250" />
 
----
-
 ## Technology Stack
 
 - **React**
 - **Next.js**
 - **Tailwind CSS**
 - **Netlify**
-- **Git & GitHub**
-
----
 
 ## Key Features
 
@@ -25,8 +20,6 @@ This repository contains the source code for my personal portfolio website. The 
 - Clean and minimal user interface with a strong focus on readability and visual hierarchy  
 - Thoughtful animations and transitions to enhance usability without distraction  
 - Centralized presentation of professional experience, projects, and writing  
-
----
 
 ## Purpose
 
