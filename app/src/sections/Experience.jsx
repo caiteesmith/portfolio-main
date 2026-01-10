@@ -53,9 +53,7 @@ const ROLES = [
     org: "Valley Bank",
     when: "June 2024 - Dec 2024",
     logo: "vb",
-    chips: ["Technical documentation"],
-    // optionally add intern impact if you want it to show up in mergedImpact
-    // impact: [...]
+    chips: ["Technical documentation"]
   },
   {
     role: "Software Engineer",
@@ -391,8 +389,8 @@ function buildValleyGroupCard(valleyRoles, nowTick) {
   return {
     type: "group",
     key: "valley-bank-group",
-    title: "Valley Bank",
-    subtitle: "Software Engineer",
+    subtitle: "Valley Bank",
+    title: "Software Engineer",
     when: "June 2024 - now",
     logo: "vb",
     chips: mergedChips,
