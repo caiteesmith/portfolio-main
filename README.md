@@ -1,24 +1,33 @@
-# 💻 Caitee's Portfolio Website
+# Caitee Smith: Portfolio Website
 
-This is my personal portfolio site, built to showcase my work as both a back-end and front-end developer, share case studies of projects I’ve worked on, and provide a space for writing about technology and design.
+This repository contains the source code for my personal portfolio website. The site is designed to present my professional experience as a software engineer, highlight selected projects through detailed case studies, and share written content related to technology, systems, and design.
 
-🪩 **Live Site:** [caiteesmith.com](https://www.caiteesmith.com)
+🔗 **Live Site:** [https://www.caiteesmith.com](https://www.caiteesmith.com)
 
-<img src="https://user-images.githubusercontent.com/7319667/227025874-89e8b2dc-8ceb-4d9f-8c9f-7b0b57264a5b.svg" width="250">
+<img src="https://user-images.githubusercontent.com/7319667/227025874-89e8b2dc-8ceb-4d9f-8c9f-7b0b57264a5b.svg" width="250" />
 
-## 🚀 Tech Stack
-- ⚛️ **React**
-- 🎨 **Tailwind CSS**
-- ⚡ **Next.js** 
-- ☁️ **Netlify**
-- 🔧 **Git & GitHub**
+---
 
-## ✨ Features
-- 📱 Fully responsive design for desktop and mobile  
-- 📑 Case study modals with detailed write-ups  
-- 🧾 Clean, minimal UI focused on readability  
-- 🎬 Smooth animations and transitions for a polished experience  
-- 📂 A central hub for projects, experience, and writing  
+## Technology Stack
 
-## 🎯 Purpose
-I built this portfolio to bring my work together in one place. It reflects the skills I use every day as a developer and the way I approach design, problem solving, and communication. My goal is to make it simple for others to explore my projects and get a clear sense of how I build software.
+- **React**
+- **Next.js**
+- **Tailwind CSS**
+- **Netlify**
+- **Git & GitHub**
+
+---
+
+## Key Features
+
+- Responsive, mobile-first design optimized for modern browsers  
+- Project case studies with clear descriptions of problems, solutions, and outcomes  
+- Clean and minimal user interface with a strong focus on readability and visual hierarchy  
+- Thoughtful animations and transitions to enhance usability without distraction  
+- Centralized presentation of professional experience, projects, and writing  
+
+---
+
+## Purpose
+
+The goal of this portfolio is to provide a clear and cohesive view of my work and professional background. It reflects my approach to software development: building systems that are well-structured, maintainable, and user-focused. The site is intended to make it easy for viewers to understand both the technical decisions behind my projects and the way I approach problem-solving.
