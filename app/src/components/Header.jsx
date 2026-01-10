@@ -5,8 +5,8 @@ import Button from "@/components/ui/Button";
 
 const NAV = [
   { id: "expertise", label: "Expertise" },
-  { id: "education", label: "Education" },
   { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
   { id: "projects", label: "Projects" },
   { id: "writing", label: "Writing" },
   { id: "about", label: "About" },

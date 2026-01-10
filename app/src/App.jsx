@@ -47,8 +47,8 @@ export default function App() {
   const sectionIds = [
     "home",
     "expertise",
-    "education",
     "experience",
+    "education",
     "projects",
     "writing",
     "about",
