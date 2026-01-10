@@ -73,3 +73,8 @@ ENV/
 .tmp/
 temp/
 .cache/
+
+# ===============================
+# Windows thumbnail cache
+# ===============================
+Thumbs.db
