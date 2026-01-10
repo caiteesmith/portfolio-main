@@ -6,7 +6,13 @@ import Logo from "@/components/Logo";
 import { useEffect, useState } from "react";
 
 export default function Hero(){
-  const titles = [".NET/C# specialist","clean architecture advocate","Microsoft Azure pro","Scrum & Agile enthusiast"];
+  const titles = [
+    ".NET/C#/Azure Functions dev",
+    "clean architecture advocate",
+    "DevOps & CI/CD nerd",
+    "Scrum & Agile practitioner",
+    "front-end/UI enthusiast",
+  ];
   const [titleIdx,setTitleIdx] = useState(0);
   useEffect(() => { const id=setInterval(()=>setTitleIdx(i=>(i+1)%titles.length),2000); return ()=>clearInterval(id); }, []);
 
