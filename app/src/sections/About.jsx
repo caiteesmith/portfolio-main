@@ -8,11 +8,11 @@ export default function About() {
       <Card className="md:col-span-2">
         <CardHeader className="mb-2">
           <CardTitle>Background</CardTitle>
-          <CardDescription>Back-End Developer · Problem Solver · Creative at Heart</CardDescription>
+          <CardDescription>Software Engineer | Problem Solver | Creative at Heart</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4 pb-4">
           <p>
-            I'm a Back-End Developer specializing in C# and Azure. 
+            I'm a Software Engineer specializing in C# and Azure. 
             My focus is on building reliable, testable services from clear requirements, always with an eye on 
             observability, clean architecture, and leaving codebases better than I found them. 
             I like solving problems in a way that keeps systems maintainable and teams confident.

@@ -1,21 +1,68 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import BrandLogo from "@/components/BrandLogo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
+
+const MONTHS = {
+  jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
+  jul: 6, aug: 7, sep: 8, sept: 8, oct: 9, nov: 10, dec: 11,
+};
+
+function parseMonthYear(input) {
+  const parts = input.trim().split(/\s+/);
+  if (parts.length < 2) return null;
+
+  const month = MONTHS[parts[0].slice(0, 3).toLowerCase()];
+  const year = Number(parts[1]);
+
+  if (month === undefined || Number.isNaN(year)) return null;
+  return new Date(year, month, 1);
+}
+
+function parseWhenRange(when) {
+  const [startRaw, endRaw] = when.split("-").map((s) => s.trim());
+  const start = parseMonthYear(startRaw);
+
+  const isCurrent =
+    !endRaw || ["now", "present"].includes(endRaw.toLowerCase());
+
+  const end = isCurrent ? new Date() : parseMonthYear(endRaw);
+  return { start, end, isCurrent };
+}
+
+function monthsInclusive(start, end) {
+  const startIdx = start.getFullYear() * 12 + start.getMonth();
+  const endIdx = end.getFullYear() * 12 + end.getMonth();
+  return Math.max(1, endIdx - startIdx + 1);
+}
+
+function formatLinkedInTenure(totalMonths) {
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  if (years > 0 && months > 0) return `${years} yr${years === 1 ? "" : "s"} ${months} mo${months === 1 ? "" : "s"}`;
+  if (years > 0) return `${years} yr${years === 1 ? "" : "s"}`;
+  return `${Math.max(1, months)} mo${months === 1 ? "" : "s"}`;
+}
+
+function isCurrentRole(when) {
+  return when.toLowerCase().includes("now") || when.toLowerCase().includes("present");
+}
 
 export default function Experience() {
   const roles = [
     {
-      role: "Back-End Developer",
+      role: "Software Engineer",
       org: "Valley Bank",
       when: "Jan 2025 - now",
       logo: "vb",
       chips: [
         ".NET 8",
+        "C#",
+        "Vue.js",
         "Azure Functions",
-        "Cosmos DB",
-        "Docker",
+        "Python workflows",
         "Azure DevOps",
         "CI/CD pipelines",
         "Unit testing",
@@ -24,6 +71,68 @@ export default function Experience() {
         "OpenAPI",
         "Agile/Scrum",
         "Cloud deployments",
+        "Cosmos DB",
+        "Docker"
+      ],
+    },
+    {
+      role: "Software Engineering Intern",
+      org: "Valley Bank",
+      when: "Jun 2024 - Dec 2024",
+      logo: "vb",
+      chips: [
+        "Intern group project leadership",
+        ".NET microservice fundamentals",
+        "Pair programming",
+        "Code reviews",
+        "Technical documentation",
+      ],
+    },
+    {
+      role: "Software Engineer",
+      org: "Thorlabs",
+      when: "Jul 2023 - May 2024",
+      logo: "thorlabs",
+      chips: [
+        "Mobile app redesign",
+        "Cross-platform development",
+        "UI/UX modernization",
+        "Release management",
+        "Cross-team collaboration",
+        "Swift (iOS)",
+        "Java (Android)",
+        "App Store & Play Store",
+      ],
+    },
+    {
+      role: "Digital Platform Manager",
+      org: "Automotive Specialty Wraps",
+      when: "Mar 2023 - Nov 2023",
+      logo: "asw",
+      chips: [
+        "Website optimization",
+        "Business analysis",
+        "Technical SEO",
+        "Performance analytics",
+        "Content strategy",
+        "Brand growth",
+        "Social media management",
+      ],
+    },
+    {
+      role: "Senior Web Developer",
+      org: "HIPB2B",
+      when: "May 2013 - Mar 2023",
+      logo: "hipb2b",
+      chips: [
+        "Frontend system ownership",
+        "High-conversion landing pages",
+        "Long-term client support",
+        "SEO & performance optimization",
+        "CMS architecture",
+        "HTML & CSS",
+        "PHP",
+        "WordPress",
       ],
     },
     {
@@ -32,70 +141,36 @@ export default function Experience() {
       when: "Jun 2018 - now",
       logo: "csp",
       chips: [
+        "Creative direction",
         "Business operations",
-        "Client experience",
+        "Client experience design",
         "Wedding day coordination",
         "High-volume photo editing",
-        "Content strategy",
-        "Team & vendor management",
-      ],
-    },
-    {
-      role: "Software Development Intern",
-      org: "Valley Bank",
-      when: "Jun 2024 - Dec 2024",
-      logo: "vb",
-      chips: [
-        "Intern project leadership",
-        ".NET microservice fundamentals",
-        "Pair programming",
-        "Code reviews",
-        "Technical documentation",
-      ],
-    },
-    {
-      role: "Mobile App Developer",
-      org: "Thorlabs",
-      when: "Jul 2023 - May 2024",
-      logo: "thorlabs",
-      chips: [
-        "Swift (iOS)",
-        "Java (Android)",
-        "UI modernization",
-        "Cross-team engineering collaboration",
-        "App Store & Play Store releases",
-      ],
-    },
-    {
-      role: "Digital Marketing Manager",
-      org: "Automotive Specialty Wraps",
-      when: "Mar 2023 - Nov 2023",
-      logo: "asw",
-      chips: [
-        "Website UI/UX optimization",
-        "Technical & on-page SEO",
-        "Performance analytics",
-        "Social media strategy",
-        "Multi-format content production",
-        "Blog optimization",
-      ],
-    },
-    {
-      role: "Web Developer",
-      org: "HIPB2B",
-      when: "May 2013 - Mar 2023",
-      logo: "hipb2b",
-      chips: [
-        "Landing page development",
-        "PHP form processing",
-        "SEO & performance optimization",
-        "WordPress maintenance",
-        "CMS administration",
+        "Content development",
+        "Team & vendor coordination",
       ],
     },
   ];
 
   const [expanded, setExpanded] = useState({});
+  const [nowTick, setNowTick] = useState(Date.now());
+
+  useEffect(() => {
+    const id = setInterval(() => setNowTick(Date.now()), 60 * 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const tenureByIndex = useMemo(() => {
+    return roles.map((r) => {
+      const { start, end, isCurrent } = parseWhenRange(r.when);
+      if (!start || !end) return null;
+
+      const effectiveEnd = isCurrent ? new Date(nowTick) : end;
+      const totalMonths = monthsInclusive(start, effectiveEnd);
+
+      return formatLinkedInTenure(totalMonths);
+    });
+  }, [roles, nowTick]);
 
   const allQuotes = useMemo(() => {
     const collected = roles
@@ -111,14 +186,8 @@ export default function Experience() {
     const placeholders = [
       {
         text: "Since joining Valley, Caitee has shown how she can be relied upon to see things through to completion. This is in recognition of the ownership she has taken in further developing solutions in support of Valley's overall strategy to build and deploy services for our partners.",
-        author: "Manager",
+        author: "Manager & Solution Architect",
         authorRole: "Enterprise Solution Architecture",
-        org: "Valley Bank"
-      },
-      {
-        text: "I'd like to give a special thanks to Caitee Smith for being an amazing group leader for our internship group project.",
-        author: "Co-Intern",
-        authorRole: "Valley's Internship Program (VIP)",
         org: "Valley Bank"
       },
       {
@@ -137,6 +206,12 @@ export default function Experience() {
         text: "Thank you, Caitee, for showing true ownership of a project and sticking through all the hurdles with the deployment and ensuring it goes live!",
         author: "Manager",
         authorRole: "Enterprise Solution Architecture",
+        org: "Valley Bank"
+      },
+      {
+        text: "I'd like to give a special thanks to Caitee Smith for being an amazing group leader for our internship group project.",
+        author: "Co-Intern",
+        authorRole: "Valley's Internship Program (VIP)",
         org: "Valley Bank"
       },
     ];
@@ -159,6 +234,39 @@ export default function Experience() {
 
               <div className="space-y-2 flex-1">
                 <p className="text-sm text-gray-500 dark:text-gray-400">{c.when}</p>
+                {tenureByIndex[i] && (
+                  <div
+                    className={[
+                      "inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px]",
+                      isCurrentRole(c.when)
+                        ? [
+                            "bg-gradient-to-r from-emerald-100/70 to-teal-100/70",
+                            "dark:from-emerald-900/30 dark:to-teal-900/30",
+                            "border border-emerald-200/70 dark:border-emerald-800/50",
+                            "text-emerald-900 dark:text-emerald-100",
+                          ].join(" ")
+                        : [
+                            "bg-gray-100 dark:bg-gray-800/60",
+                            "border border-gray-200/60 dark:border-gray-700/60",
+                            "text-gray-700 dark:text-gray-300",
+                          ].join(" "),
+                      "shadow-sm",
+                    ].join(" ")}
+                    aria-label="Tenure"
+                  >
+                    {isCurrentRole(c.when) && (
+                      <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    )}
+
+                    <span className="font-medium">
+                      {isCurrentRole(c.when) ? "Current" : "Tenure"}
+                    </span>
+
+                    <span className="font-mono tabular-nums">
+                      {tenureByIndex[i]}
+                    </span>
+                  </div>
+                )}
 
                 {c.quotes && c.quotes.length > 0 ? (
                   <div className="space-y-3" aria-label="Testimonials">
