@@ -26,7 +26,7 @@ export default function Contact(){
     <Card>
       <CardHeader>
         <CardTitle>Let's build something!</CardTitle>
-        <CardDescription>Looking for a .NET/C# developer with Azure experience? Drop me a note and let's talk.</CardDescription>
+        <CardDescription>Looking for a Software Engineer with .NET/C# and Azure experience? Let's chat!</CardDescription>
       </CardHeader>
       <CardContent>
         <form ref={formRef} onSubmit={submitContact} name="contact" data-netlify="true">

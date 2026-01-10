@@ -43,8 +43,8 @@ export default function About() {
           </p>
 
           <p>
-            I've called New Jersey, New York (15 years including 5 in NYC), north Texas, 
-            and southern Louisiana home. Moving often shaped how I collaborate: 
+            I've called New Jersey, New York state and NYC, north Texas, 
+            southern Louisiana, and Indiana home. Moving so often shaped how I collaborate: 
             direct, adaptable, and quick to connect across teams and personalities.
           </p>
         </CardContent>
