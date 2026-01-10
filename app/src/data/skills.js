@@ -1,5 +1,5 @@
 export const SKILL_TAGS = [
-  ".NET 8",
+  ".NET",
   "Agile",
   "Azure Cosmos DB",
   "Azure DevOps",
@@ -21,6 +21,8 @@ export const SKILL_TAGS = [
   "NUnit",
   "OpenAPI",
   "Postman",
+  "Python",
+  "React",
   "REST APIs",
   "Scrum",
   "Snyk",

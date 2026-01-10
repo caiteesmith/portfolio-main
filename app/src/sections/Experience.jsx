@@ -297,6 +297,7 @@ export default function Experience() {
         "Vue.js",
         "Azure Functions",
         "Python workflows",
+        "Microservices",
         "Azure DevOps",
         "CI/CD pipelines",
         "Unit testing",
@@ -307,6 +308,7 @@ export default function Experience() {
         "Cloud deployments",
         "Cosmos DB",
         "Docker",
+        "Change management"
       ],
     },
     {
