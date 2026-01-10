@@ -21,7 +21,6 @@ export const PROJECTS = [
       "Containerized multiple Streamlit applications for reproducible environments",
       "Designed Docker Compose architecture to streamline local deployment",
       "Improved reliability and portability across engineering teams",
-      "Designed Docker Compose architecture to streamline local deployment",
       "Laid groundwork for internal Kubernetes hosting and orchestration",
       "Collaborated cross-team to align services with existing CI/CD and infrastructure"
     ]
@@ -43,15 +42,15 @@ export const PROJECTS = [
       "Terraform",
       "Azure Pipelines",
       "CI/CD",
-      "OpenAPI / Swagger",
+      "OpenAPI/Swagger",
       "NUnit",
       "Moq",
       "Logging & Observability",
       "Vue.js",
-      "Agile / Scrum"
+      "Agile/Scrum"
     ],
     impact: [
-      "Owned 12+ .NET 8 services across EXP/PRC/SYS layers",
+      "Owned 8+ .NET 8 services across EXP/PRC/SYS layers",
       "Implemented structured logging for cross-service traceability",
       "Automated deployments with Terraform and Azure Pipelines",
       "Maintained strong unit test coverage (NUnit/Moq) and clear API contracts (OpenAPI)"
