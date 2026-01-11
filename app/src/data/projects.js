@@ -113,10 +113,10 @@ export const PROJECTS = [
   },
   {
     id: "thorlabs",
-    title: "Thorlabs Toolkit (iOS/Android)",
+    title: "Thorlabs Toolkit",
     org: "Thorlabs",
     summary:
-      "Optical calculator app revamp with improved UI and modules.",
+      "Optical calculator iOS and Android app revamp with improved UI and modules.",
     href: "https://apps.apple.com/us/app/thorlabs-toolkit/id6475776756",
     code: "https://github.com/caiteesmith/ThorlabsToolkit-iOS",
     tags: [
@@ -144,7 +144,7 @@ export const PROJECTS = [
     title: "Mobile Feedback Form",
     org: "Thorlabs",
     summary:
-      "Mobile-friendly product feedback with validation, hosted on Netlify.",
+      "Mobile-friendly product feedback form with validation, to be embedded within the Thorlabs Toolkit mobile app.",
     href: "https://thorlabs-toolkit-feedback.netlify.app/",
     code: "https://github.com/caiteesmith/Mobile-Feedback-Form",
     tags: [
