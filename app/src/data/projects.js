@@ -211,28 +211,5 @@ export const PROJECTS = [
       "PHP server-side validation and clean success/error UX",
       "Simple, high-contrast typography for readability"
     ]
-  },
-  {
-    id: "mariadb",
-    title: "MariaDB Landing Page",
-    org: "HIPB2B",
-    summary:
-      "Responsive landing page with validation + PHP submission.",
-    href: "https://github.com/caiteesmith/MariaDb-Landing-Page",
-    code: "https://github.com/caiteesmith/MariaDb-Landing-Page",
-    tags: [
-      "HTML",
-      "Bootstrap CSS",
-      "PHP",
-      "Form Validation",
-      "UX/UI",
-      "Responsive Design"
-    ],
-    img: "/images/projects/mariadb-mat.webp",
-    impact: [
-      "Built fast-loading page optimized for conversions",
-      "Form validation and secure submission with PHP",
-      "Reusable components for faster campaign turnarounds"
-    ]
   }
 ];
