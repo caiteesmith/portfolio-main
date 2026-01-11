@@ -84,7 +84,7 @@ export const PROJECTS = [
   },
   {
     id: "pet",
-    title: "Capstone: Pet Adoption Prediction Dashboard",
+    title: "Pet Adoption Prediction Dashboard",
     org: "Western Governors University",
     summary:
       "Streamlit dashboard with ML predictions for shelter adoption likelihood.",
