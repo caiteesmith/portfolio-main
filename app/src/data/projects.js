@@ -112,6 +112,32 @@ export const PROJECTS = [
     ]
   },
   {
+    id: "portfolio",
+    title: "Personal Portfolio",
+    org: "Personal",
+    summary:
+      "React + Vite app with Tailwind CSS, Framer Motion, and Lucide React icons.",
+    href: "https://caiteesmith.com/",
+    code: "https://github.com/caiteesmith/portfolio-main",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lucide React",
+      "Responsive Design",
+      "Accessibility",
+      "Dark Mode",
+      "Netlify"
+    ],
+    img: "/images/projects/portfolio-mat.webp",
+    impact: [
+      "Migrated from static Bootstrap to React, Vite, and Tailwind",
+      "Accessible components, keyboard-friendly nav, dark mode",
+      "Animated backgrounds and performant motion with Framer Motion"
+    ]
+  },
+  {
     id: "thorlabs",
     title: "Thorlabs Toolkit",
     org: "Thorlabs",
@@ -150,7 +176,7 @@ export const PROJECTS = [
     tags: [
       "HTML",
       "CSS",
-      "Vanilla JS",
+      "JavaScript",
       "Netlify",
       "Form Validation",
       "Mobile-first",
@@ -161,32 +187,6 @@ export const PROJECTS = [
       "Lightweight, mobile-first form embedded via WKWebView",
       "Client-side validation and clean error states",
       "Zero-ops hosting/deploy previews with Netlify"
-    ]
-  },
-  {
-    id: "portfolio",
-    title: "Personal Portfolio",
-    org: "Personal",
-    summary:
-      "React + Vite app with Tailwind CSS, Framer Motion, and Lucide React icons.",
-    href: "https://caiteesmith.com/",
-    code: "https://github.com/caiteesmith/portfolio-main",
-    tags: [
-      "React",
-      "Vite",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Lucide React",
-      "Responsive Design",
-      "Accessibility",
-      "Dark Mode",
-      "Netlify"
-    ],
-    img: "/images/projects/portfolio-mat.webp",
-    impact: [
-      "Migrated from static Bootstrap to React, Vite, and Tailwind",
-      "Accessible components, keyboard-friendly nav, dark mode",
-      "Animated backgrounds and performant motion with Framer Motion"
     ]
   },
   {
