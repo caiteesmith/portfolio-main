@@ -1,5 +1,31 @@
 export const PROJECTS = [
   {
+    id: "photo-ops-suite",
+    title: "Photo Ops Suite",
+    org: "Caitee Smith Photography",
+    summary:
+      "A suite of wedding photographer-focused planning tools built with Python & Streamlit to help users create realistic timelines, plan around sunset and golden hour, and estimate post-processing workload.",
+    href: "https://photo-ops-suite.streamlit.app/",
+    code: "https://github.com/caiteesmith/photo-ops-suite",
+    tags: [
+      "Python",
+      "Streamlit",
+      "Product Design",
+      "UX/UI",
+      "Time-based calculations",
+      "API Integration",
+      "Geocoding",
+      "Pandas"
+    ],
+    img: "images/projects/photo-ops-suite.webp",
+    impact: [
+      "Designed a planning tool suite for real-world wedding photography workflows",
+      "Built a timeline engine that accounts for coverage limits, travel, buffers, and more",
+      "Implemented a location-aware sunset planner using geocoding and external APIs",
+      "Added a post-processing workload estimator to support delivery timelines"
+    ]
+  },
+  {
     id: "chatbots",
     title: "AI/ML Chatbot Containerization",
     org: "Valley Bank",
