@@ -15,14 +15,16 @@ export const PROJECTS = [
       "Time-based calculations",
       "API Integration",
       "Geocoding",
-      "Pandas"
+      "Pandas",
+      "Financial Modeling"
     ],
     img: "images/projects/photo-ops-suite.webp",
     impact: [
       "Designed a planning tool suite for real-world wedding photography workflows",
       "Built a timeline engine that accounts for coverage limits, travel, buffers, and more",
       "Implemented a location-aware sunset planner using geocoding and external APIs",
-      "Added a post-processing workload estimator to support delivery timelines"
+      "Added a post-processing workload estimator to support delivery timelines",
+      "Built a wedding-specific CODB calculator to model costs, time, profit margin, and tax-aware take-home pricing"
     ]
   },
   {
