@@ -24,7 +24,33 @@ export const PROJECTS = [
       "Built a timeline engine that accounts for coverage limits, travel, buffers, and more",
       "Implemented a location-aware sunset planner using geocoding and external APIs",
       "Added a post-processing workload estimator to support delivery timelines",
-      "Built a wedding-specific CODB calculator to model costs, time, profit margin, and tax-aware take-home pricing"
+      "Built a CODB calculator to model costs, time, profit margin, and take-home pricing"
+    ]
+  },
+  {
+    id: "personal-finance-dashboard",
+    title: "Personal Finance Dashboard",
+    org: "Personal Project",
+    summary:
+      "A modern, spreadsheet-style personal finance dashboard built with Python & Streamlit, modeled after my personal finance Excel spreadsheet.",
+    href: "https://personal-finance-dashboard-cs.streamlit.app/",
+    code: "https://github.com/caiteesmith/personal-finance-dashboard",
+    tags: [
+      "Python",
+      "Streamlit",
+      "Product Design",
+      "UX/UI",
+      "Pandas",
+      "Financial Modeling",
+      "Data Visualization",
+      "Personal Finance"
+    ],
+    img: "images/projects/personal-finance-dash.png",
+    impact: [
+      "Designed a spreadsheet-style dashboard to track monthly cash flow, saving, & more",
+      "Built a summary view to highlight the most important financial signals at a glance",
+      "Implemented an emergency minimum calculator to model survival-level spending",
+      "Added exportable snapshots and CSV outputs for portability and offline analysis"
     ]
   },
   {
