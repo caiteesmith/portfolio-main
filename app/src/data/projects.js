@@ -216,28 +216,5 @@ export const PROJECTS = [
       "Client-side validation and clean error states",
       "Zero-ops hosting/deploy previews with Netlify"
     ]
-  },
-  {
-    id: "cymulate",
-    title: "Cymulate Landing Page",
-    org: "HIPB2B",
-    summary:
-      "Responsive landing page for a whitepaper with PHP form handling.",
-    href: "https://github.com/caiteesmith/Cymulate-Landing-Page",
-    code: "https://github.com/caiteesmith/Cymulate-Landing-Page",
-    tags: [
-      "HTML",
-      "Bootstrap CSS",
-      "PHP",
-      "Form Validation",
-      "UX/UI",
-      "Responsive Design"
-    ],
-    img: "/images/projects/cymulate-mat.webp",
-    impact: [
-      "Responsive layout tailored for lead-gen campaigns",
-      "PHP server-side validation and clean success/error UX",
-      "Simple, high-contrast typography for readability"
-    ]
   }
 ];
