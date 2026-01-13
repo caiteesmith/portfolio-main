@@ -8,7 +8,7 @@ export const PROJECTS = [
     href: "https://photo-ops-suite.streamlit.app/",
     code: "https://github.com/caiteesmith/photo-ops-suite",
     tags: [
-      "🐍 Python",
+      "Python",
       "Streamlit",
       "Product Design",
       "UX/UI",
@@ -36,7 +36,7 @@ export const PROJECTS = [
     href: "https://personal-finance-dashboard-cs.streamlit.app/",
     code: "https://github.com/caiteesmith/personal-finance-dashboard",
     tags: [
-      "🐍 Python",
+      "Python",
       "Streamlit",
       "Product Design",
       "UX/UI",
@@ -62,7 +62,7 @@ export const PROJECTS = [
     href: null,
     code: null,
     tags: [
-      "🐳 Docker",
+      "Docker",
       "Docker Compose",
       "DataRobot",
       "Streamlit",
@@ -88,8 +88,8 @@ export const PROJECTS = [
     href: null,
     code: null,
     tags: [
-      "#️⃣ C#",
       ".NET 8",
+      "C#",
       "Azure Functions",
       "Cosmos DB",
       "Azure Service Bus",
@@ -119,7 +119,7 @@ export const PROJECTS = [
     href: "https://huggingface.co/spaces/caiteesmith/pet-adoption-prediction-dash",
     code: "https://github.com/caiteesmith/c964-pet-adoption-prediction-dash",
     tags: [
-      "🐍 Python",
+      "Python",
       "Machine Learning",
       "Streamlit",
       "Altair",
@@ -148,7 +148,7 @@ export const PROJECTS = [
     href: "https://caiteesmith.com/",
     code: "https://github.com/caiteesmith/portfolio-main",
     tags: [
-      "🌀 React",
+      "React",
       "Vite",
       "Tailwind CSS",
       "Framer Motion",
@@ -174,8 +174,8 @@ export const PROJECTS = [
     href: "https://apps.apple.com/us/app/thorlabs-toolkit/id6475776756",
     code: "https://github.com/caiteesmith/ThorlabsToolkit-iOS",
     tags: [
-      "🦅 Swift",
-      "☕️ Java",
+      "Swift",
+      "Java",
       "Xcode",
       "Android Studio",
       "Mobile",
