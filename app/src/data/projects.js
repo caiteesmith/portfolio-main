@@ -30,7 +30,7 @@ export const PROJECTS = [
   {
     id: "personal-finance-dashboard",
     title: "Personal Finance Dashboard",
-    org: "Personal Project",
+    org: "Personal",
     summary:
       "A modern, spreadsheet-style personal finance dashboard built with Python & Streamlit, modeled after my personal finance Excel spreadsheet.",
     href: "https://personal-finance-dashboard-cs.streamlit.app/",
