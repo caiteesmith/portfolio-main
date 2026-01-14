@@ -5,8 +5,8 @@ export const PROJECTS = [
   org: "Personal Project",
   summary:
     "A set of spreadsheet-style personal finance tools built with Python and Streamlit to help organize income, expenses, debt, and housing so the numbers make sense before decisions are made.",
-  href: "https://financial-breakdown-cs.streamlit.app/",
-  code: "https://github.com/caiteesmith/financial-breakdown",
+  href: "https://the-financial-breakdown.streamlit.app/",
+  code: "https://github.com/caiteesmith/the-financial-breakdown",
   tags: [
     "Python",
     "Streamlit",
