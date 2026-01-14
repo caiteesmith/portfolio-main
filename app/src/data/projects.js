@@ -1,5 +1,32 @@
 export const PROJECTS = [
   {
+  id: "financial-breakdown",
+  title: "The Financial Breakdown",
+  org: "Personal Project",
+  summary:
+    "A set of spreadsheet-style personal finance tools built with Python and Streamlit to help organize income, expenses, debt, and housing so the numbers make sense before decisions are made.",
+  href: "https://financial-breakdown-cs.streamlit.app/",
+  code: "https://github.com/caiteesmith/financial-breakdown",
+  tags: [
+    "Python",
+    "Streamlit",
+    "Product Design",
+    "UX/UI",
+    "Pandas",
+    "Financial Modeling",
+    "Data Visualization",
+    "Personal Finance"
+  ],
+  img: "images/projects/personal-finance-dashboard.png",
+  impact: [
+    "Built a spreadsheet-style cash flow tool to itemize personal finances",
+    "Designed an at-a-glance summary highlighting the most important financial signals",
+    "Implemented an emergency minimum to model survival-level monthly spending",
+    "Designed a mortgage payoff calculator to see amortization and early payoff timelines",
+    "Enabled exportable snapshots and CSV outputs for portability and offline analysis"
+  ]
+  },
+  {
     id: "photo-ops-suite",
     title: "Photo Ops Suite",
     org: "Caitee Smith Photography",
@@ -25,32 +52,6 @@ export const PROJECTS = [
       "Implemented a location-aware sunset planner using geocoding and external APIs",
       "Added a post-processing workload estimator to support delivery timelines",
       "Built a CODB calculator to model costs, time, profit margin, and take-home pricing"
-    ]
-  },
-  {
-    id: "personal-finance-dashboard",
-    title: "Personal Finance Dashboard",
-    org: "Personal",
-    summary:
-      "A modern, spreadsheet-style personal finance dashboard built with Python & Streamlit, modeled after my personal finance Excel spreadsheet.",
-    href: "https://personal-finance-dashboard-cs.streamlit.app/",
-    code: "https://github.com/caiteesmith/personal-finance-dashboard",
-    tags: [
-      "Python",
-      "Streamlit",
-      "Product Design",
-      "UX/UI",
-      "Pandas",
-      "Financial Modeling",
-      "Data Visualization",
-      "Personal Finance"
-    ],
-    img: "images/projects/personal-finance-dash.png",
-    impact: [
-      "Designed a spreadsheet-style dashboard to track monthly cash flow, saving, & more",
-      "Built a summary view to highlight the most important financial signals at a glance",
-      "Implemented an emergency minimum calculator to model survival-level spending",
-      "Added exportable snapshots and CSV outputs for portability and offline analysis"
     ]
   },
   {
